@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Artista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="artist-header">
+        <a href="index.html" class="back-button">←</a>
+        <img id="artist-image" src="images/default-artist.jpg" alt="Artista" class="artist-image">
+        <h1 id="artist-name">Nome Artista</h1>
+        <p id="monthly-listeners" class="listeners-count">0 ascoltatori mensili</p>
+        <div class="artist-buttons">
+            <button class="follow-button">Segui</button>
+            <button class="shuffle-button">🔀</button>
+            <button class="play-button">Play</button>
+        </div>
+    </header>
+
+    <section class="artist-section">
+        <h2>Brani che ti piacciono</h2>
+        <div class="liked-songs">
+            <img src="images/default-album.jpg" alt="Album" class="liked-songs-image">
+            <p>8 brani di <span id="artist-name-mini">Nome Artista</span></p>
+        </div>
+    </section>
+
+    <section class="albums-section">
+        <h2>Album</h2>
+        <div id="albums-list" class="albums-list">
+        </div>
+    </section>
+
+    <section class="popular-section">
+        <h2>Popolari</h2>
+        <div id="popular-songs" class="popular-songs">
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

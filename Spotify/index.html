@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/Spotify-logo.png" alt="Spotify Logo" class="logo-image">
+                <h1>Spotify Clone</h1>
+            </div>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="cerca.html">Cerca</a>
+                <a href="library.html">La tua libreria</a>
+                <h3>Playlist</h3>
+                <ul>
+                    <li>Crea playlist</li>
+                    <li>Brani che ti piacciono</li>
+                    <li>I tuoi episodi</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="currently-playing">
+                <img src="images/mm/Marilyn Manson Antichrist superstar.jpg" alt="Cover Album Marilyn Manson Antichrist superstar" class="album-cover">
+                <div class="track-info">
+                    <h2 id="current-track-name">The beautiful people</h2>
+                    <p id="current-artist-name">Mariyn Manson</p>
+                </div>
+            </section>
+
+            <section class="greeting">
+                <h2>Buonasera</h2>
+                <div class="playlist-grid">
+                    <div class="playlist-box">Liebe ist fur alle da</div>
+                    <div class="playlist-box">Mutter</div>
+                    <div class="playlist-box">We are chaos</div>
+                    <div class="playlist-box">Brani che ti piacciono</div>
+                    <div class="playlist-box">LimpBizkit</div>
+                </div>
+            </section>
+
+            <section class="recommendations">
+                <h2>Altro di ciò che ti piace</h2>
+                <div class="playlist-grid">
+                    <div class="playlist-box">Metal</div>
+                    <div class="playlist-box">Rammstein</div>
+                    <div class="playlist-box">Puscifer</div>
+                    <div class="playlist-box">Thrash metal</div>
+                    <div class="playlist-box">Korn</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="music-player">
+        <div class="track-info">
+            <img src="images/p/Parole violator.png" alt="Track Cover Puscifer Parole violator" class="track-cover">
+            <div>
+                <p class="track-name">Parole violator</p>
+                <p class="artist-name">Puscifer</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button>⏮</button>
+            <button>⏯</button>
+            <button>⏭</button>
+        </div>
+        <div class="volume">
+            <input type="range" min="0" max="100" value="50">
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

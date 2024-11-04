@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh; 
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+h1 {
+    font-size: 24px; 
+}
+
+.navigation a {
+    display: block;
+    color: #b3b3b3;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.navigation h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.main-content {
+    flex: 1; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.playlist-box {
+    background-color: #282828;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.currently-playing {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%; 
+}
+
+.album-cover {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.track-info h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.track-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #b3b3b3; 
+}
+
+.music-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282828;
+    padding: 10px;
+}
+
+.track-cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #282828;
+    padding: 10px 0;
+}
+
+.bottom-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
